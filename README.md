@@ -3,6 +3,7 @@
 - JavaScipt
 - Criação de componentes e pages
 - CSS modules
+- React Router
 - ...
 
 #### Vercel Pages: em breve
