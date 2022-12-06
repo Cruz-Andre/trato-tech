@@ -4,6 +4,8 @@
 - Criação de componentes e pages
 - CSS modules
 - React Router
+- React Redux
+- ReduxJS Toolkit
 - ...
 
 #### Vercel Pages: em breve
