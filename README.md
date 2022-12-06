@@ -1,3 +1,13 @@
+# Site Trato Tech
+##  Alura curso: React: gerenciamento de estados globais com Redux
+- JavaScipt
+- Criação de componentes e pages
+- CSS modules
+- ...
+
+#### Vercel Pages: em breve
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
