@@ -9,6 +9,7 @@ export default function Categoria() {
 
   const { nomeCategoria } = useParams()
 
+  // Não há necessidade de usar o useSelector duas ou mais vezes.
   const { categoria, itens } = useSelector(state => ({
     categoria: state.categorias.find(categoria => categoria.id === nomeCategoria),
     itens: state.itens.filter(item => item.categoria === nomeCategoria)

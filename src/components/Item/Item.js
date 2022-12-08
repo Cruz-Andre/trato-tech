@@ -1,25 +1,35 @@
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai'
 import { FaCartPlus } from 'react-icons/fa'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import { mudarCarrinho } from 'store/reducers/carrinhoSlice'
 import { mudarFavorito } from 'store/reducers/itensSlice'
 
 import styles from './Item.module.scss'
+import classNames from 'classnames'
 
 const iconeProps = {
   size: 24,
   color: '#041833'
 }
 
-export default function Item({ titulo, foto, preco, descricao, favorito, id }) {
+export default function Item({ titulo, foto, preco, descricao, favorito, id, carrinho }) {
 
   const dispatch = useDispatch()
+
+  const estaNoCarrinho = useSelector(state => state.carrinho.some(itemNocarrinho => itemNocarrinho.id === id))
 
   function favoritar() {
     dispatch(mudarFavorito(id))
   }
 
+  function adicionarNoCarrinho() {
+    dispatch(mudarCarrinho(id))
+  }
+
   return (
-    <div className={styles.item}>
+    <div className={classNames(styles.item, {
+      [styles.itemNoCarrinho]: carrinho
+    })}>
       <div className={styles['item.imagem']}>
         <img src={foto} alt={titulo} />
       </div>
@@ -37,7 +47,12 @@ export default function Item({ titulo, foto, preco, descricao, favorito, id }) {
               ? <AiFillHeart className={styles['item-acao']} {...iconeProps} color='#ff0000' onClick={favoritar} />
               : <AiOutlineHeart className={styles['item-acao']} {...iconeProps} onClick={favoritar} />
             }
-            <FaCartPlus className={styles['item.acao']} {...iconeProps} color={true ? '#1875e8' : iconeProps.color} />
+            <FaCartPlus 
+              className={styles['item.acao']} 
+              {...iconeProps} 
+              color={estaNoCarrinho ? '#1875e8' : iconeProps.color}
+              onClick={adicionarNoCarrinho}
+            />
           </div>
         </div>
       </div>

@@ -233,6 +233,8 @@ const estadoInicial = [{
 const itensSlice = createSlice({
   name: 'itens',
   initialState: estadoInicial,
+  
+  //criando um action abaixo:
   reducers: {
     mudarFavorito: (state, params) => {
       //console.log('state: ', state)
@@ -243,6 +245,7 @@ const itensSlice = createSlice({
       //console.log('params: ', params)
     }
   }
+  
 })
 
 export const { mudarFavorito } = itensSlice.actions
