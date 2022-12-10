@@ -12,7 +12,7 @@
 - adicionado botão remover item na página carrinho
 - Valores no formato pt-BR
 
-#### Vercel Pages: em breve
+#### Vercel Pages: https://trato-tech-redux.vercel.app/
 
 
 # Getting Started with Create React App
