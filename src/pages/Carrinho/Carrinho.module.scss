@@ -4,6 +4,11 @@
   flex-direction: column;
   gap: 30px;
   padding: 50px 100px;
+  @media(max-width: 480px) {
+   align-items: center;
+   margin-bottom: 10px;
+   padding: 1rem 1.5rem;
+  }
 }
 
 .total {
@@ -13,6 +18,12 @@
   max-width: 800px;
   padding: 16px;
   width: 100%;
+  @media(max-width: 480px) {
+   padding: 20px 0;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 20px;
+  }
 }
 
 .finalizar {

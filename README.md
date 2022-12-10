@@ -6,7 +6,11 @@
 - React Router
 - React Redux
 - ReduxJS Toolkit
-- ...
+## Adicionais além do curso
+- responsividade mobile ajustada
+- adicionado contador no ícone do carrinho
+- adicionado botão remover item na página carrinho
+- Valores no formato pt-BR
 
 #### Vercel Pages: em breve
 

@@ -52,6 +52,10 @@
   width: 100%;
 }
 
+.tiraBusca {
+  display: none;
+}
+
 .selected {
   font-weight: bold;
   text-decoration: underline;
@@ -59,7 +63,26 @@
 
 .icones {
   display: flex;
-  gap: 20px;
+  // gap: 20px;
   grid-area: icones;
   margin-left: 30px;
+}
+
+.itemNoCarrinho {
+  background-color: antiquewhite;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 5px;
+  right: 5px;
+}
+
+.semItemNoCarrinho {
+  display: flex;
 }

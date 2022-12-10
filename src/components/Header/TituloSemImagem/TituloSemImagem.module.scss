@@ -16,3 +16,10 @@
   font-size: 25px;
   font-weight: 400;
 }
+
+@media(max-width: 480px) {
+  
+ .titulo, .descricao {
+    text-align: center;
+  }
+}

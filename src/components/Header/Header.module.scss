@@ -12,5 +12,8 @@
   @media(max-width: $mobile-sm) {
     padding: 250px 50px 100px 50px;
   }
+  @media(max-width: 480px) {
+    padding: 190px 0 0 0;
+  }
 }
 
